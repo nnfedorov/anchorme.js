@@ -32,7 +32,7 @@ export interface File extends BaseTokenProps {
 	fileDirectory: string;
 }
 
-type TokenProps = Email & File & URL;
+type TokenProps = Email & File & URL & { input?: string };
 
 export type ListingProps = Partial<TokenProps> & BaseTokenProps;
 

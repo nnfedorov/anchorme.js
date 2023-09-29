@@ -123,6 +123,7 @@ const list = function (input: string, skipHTML:boolean=true) {
 				query:  query,
 				fragment:  fragment,
 				reason: "url",
+				input
 			});
 		} else if (result[iidxes.isFile]) {
 			const filePath = string.substr(8);

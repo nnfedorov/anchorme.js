@@ -12,3 +12,7 @@ Thumbs.dbma
 ######################
 /node_modules/*
 *.log
+
+
+.idea
+*.tgz
