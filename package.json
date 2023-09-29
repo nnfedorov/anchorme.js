@@ -1,5 +1,5 @@
 {
-	"name": "anchorme",
+	"name": "@nfedorov/anchorme",
 	"version": "3.0.5",
 	"description": "A library to convert URLs to a clickable HTML anchor elements",
 	"main": "./dist/node/index.js",
@@ -11,17 +11,19 @@
 		},
 		"./": "./"
 	},
+	"private": false,
 	"scripts": {
 		"test": "mocha",
 		"testw": "mocha -w",
 		"build": "ts-node ./build/build.ts",
 		"buildw": "ts-node ./build/build.ts -w",
 		"update-tlds": "ts-node build/tlds/update.ts",
-		"server": "lite-server"
+		"server": "lite-server",
+		"publish": "npm run build && npm publish --access public"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/alexcorvi/anchorme.js.git"
+		"url": "git+https://github.com/nnfedorov/anchorme.js.git"
 	},
 	"keywords": [
 		"text",
@@ -32,7 +34,7 @@
 	"author": "Alex Corvi <alex@arrayy.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/alexcorvi/anchorme.js/issues"
+		"url": "https://github.com/nnfedorov/anchorme.js/issues"
 	},
 	"homepage": "http://alexcorvi.github.io/anchorme.js/",
 	"devDependencies": {
