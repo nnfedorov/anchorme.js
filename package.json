@@ -1,6 +1,6 @@
 {
 	"name": "@nfedorov/anchorme",
-	"version": "3.0.5",
+	"version": "3.0.9",
 	"description": "A library to convert URLs to a clickable HTML anchor elements",
 	"main": "./dist/node/index.js",
 	"types": "./dist/node/index.d.ts",
@@ -19,7 +19,7 @@
 		"buildw": "ts-node ./build/build.ts -w",
 		"update-tlds": "ts-node build/tlds/update.ts",
 		"server": "lite-server",
-		"publish": "npm run build && npm publish --access public"
+		"publish:lib": "npm publish --access public"
 	},
 	"repository": {
 		"type": "git",
